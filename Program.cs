@@ -30,6 +30,12 @@ namespace Bank
                     case "5":
                         depositar();
                     break;
+                    case "6":
+                        deletarConta();
+                    break;
+                    case "7":
+                        buscarConta();
+                    break;
                     case "C":
                         Console.Clear();
                     break;
@@ -43,6 +49,48 @@ namespace Bank
             };
 
             Console.WriteLine("Obrigado por utilizar nosso banco!");
+
+        }
+
+        private static bool buscarConta()
+        {
+            Console.WriteLine("Digite o indice da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            for(int i = 0; i < contas.Count; i++){
+                if(contas[i].numero == indiceConta){
+                    Console.WriteLine(contas[i].ToString());
+                    Console.WriteLine();
+                    return true;
+
+                }
+            }
+
+            Console.WriteLine("Conta não encontrada!");
+            Console.WriteLine();
+            return false;
+        }
+
+        private static bool deletarConta()
+        {
+            Console.WriteLine("Digite o indice da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            for(int i = 0; i < contas.Count; i++){
+                if(contas[i].numero == indiceConta){
+                    Console.WriteLine(contas[i].ToString());
+                    Console.WriteLine("Deletando conta...");
+                    contas.Remove(contas[i]);
+                    Console.WriteLine("Conta deletada!");
+                    listarContas();
+                    Console.WriteLine();
+                    return true;
+
+                }
+            }
+
+            Console.WriteLine("Conta não encontrada!");
+            return false;
 
         }
 
@@ -70,6 +118,7 @@ namespace Bank
             double valorDeposito = double.Parse(Console.ReadLine());
 
             contas[indiceConta].depositar(valorDeposito);
+            Console.WriteLine();
 
         }
 
@@ -82,6 +131,7 @@ namespace Bank
             double valorSaque = double.Parse(Console.ReadLine());
 
             contas[indiceConta].sacar(valorSaque);
+            Console.WriteLine();
 
         }
 
@@ -101,6 +151,8 @@ namespace Bank
                 Console.WriteLine(conta.ToString());
 
             }
+
+            Console.WriteLine();
         }
 
         private static void inserirConta()
@@ -113,6 +165,9 @@ namespace Bank
             Console.Write("Digite o nome do cliente: ");
             string entradaNome = Console.ReadLine();
 
+            Console.Write("Digite o número da conta: ");
+            int numeroConta = int.Parse(Console.ReadLine());
+
             Console.Write("Digite o saldo inicial: ");
             double entradaSaldo = double.Parse(Console.ReadLine());
 
@@ -121,10 +176,12 @@ namespace Bank
 
             Conta novaConta = new Conta(tipoConta: (TipoConta)entradaTipoConta,
                                                     nome: entradaNome,
+                                                    numero: numeroConta,
                                                     saldo: entradaSaldo,
                                                     credito: entradaCredito);
 
             contas.Add(novaConta);
+
 
         }
 
@@ -138,6 +195,8 @@ namespace Bank
             Console.WriteLine("3 - Transferir");
             Console.WriteLine("4 - Sacar");
             Console.WriteLine("5 - Depositar");
+            Console.WriteLine("6 - Deletar Conta");
+            Console.WriteLine("7 - Buscar Conta");
             Console.WriteLine("C - Limpar Tela");
             Console.WriteLine("X - Sair");
 

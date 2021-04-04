@@ -6,12 +6,19 @@ namespace Bank
     {
         private TipoConta TipoConta{get; set;}
         private string Nome{get; set;}
+        private int Numero{get; set;}
         private double Saldo{get; set;}
         private double Credito{get; set;}
 
-        public Conta(TipoConta tipoConta, string nome, double saldo, double credito){
+        public int numero{
+            get => this.Numero;
+            set => this.Numero = value;
+        }
+
+        public Conta(TipoConta tipoConta, int numero ,string nome, double saldo, double credito){
             this.TipoConta = tipoConta;
             this.Nome = nome;
+            this.Numero = numero;
             this.Saldo = saldo;
             this.Credito = credito;
 
@@ -25,6 +32,7 @@ namespace Bank
 
             this.Saldo -= valorSaque;
             Console.WriteLine("Saldo atual da conta {0} é {1}: ", this.Nome, this.Saldo);
+            Console.WriteLine();
             return true;
 
         }
@@ -34,6 +42,7 @@ namespace Bank
             this.Saldo +=valorDeposito;
 
             Console.WriteLine("Saldo atual da conta {0} é {1}", this.Nome, this.Saldo);
+            Console.WriteLine();
 
         }
 
