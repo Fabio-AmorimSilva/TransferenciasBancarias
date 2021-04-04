@@ -22,10 +22,13 @@ namespace Bank
                         inserirConta();
                     break;
                     case "3":
+                        transferir();
                     break;
                     case "4":
+                        sacar();
                     break;
                     case "5":
+                        depositar();
                     break;
                     case "C":
                         Console.Clear();
@@ -40,6 +43,45 @@ namespace Bank
             };
 
             Console.WriteLine("Obrigado por utilizar nosso banco!");
+
+        }
+
+        private static void transferir()
+        {
+            Console.WriteLine("Digite o número da conta de origem: ");
+            int indiceContaOrigem = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o número da conta de destaque: ");
+            int indiceContaDestino = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor a ser transferido: ");
+            double valorTransferido = double.Parse(Console.ReadLine());
+
+            contas[indiceContaOrigem].transferir(valorTransferido, contas[indiceContaDestino]);
+
+        }
+
+        private static void depositar()
+        {
+            Console.WriteLine("Digite o número da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor a ser depositado: ");
+            double valorDeposito = double.Parse(Console.ReadLine());
+
+            contas[indiceConta].depositar(valorDeposito);
+
+        }
+
+        private static void sacar()
+        {
+            Console.WriteLine("Digite o número da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor a ser sacado: ");
+            double valorSaque = double.Parse(Console.ReadLine());
+
+            contas[indiceConta].sacar(valorSaque);
 
         }
 
