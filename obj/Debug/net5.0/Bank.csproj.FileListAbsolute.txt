@@ -1,0 +1,16 @@
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/bin/Debug/net5.0/Bank
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/bin/Debug/net5.0/Bank.deps.json
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/bin/Debug/net5.0/Bank.runtimeconfig.json
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/bin/Debug/net5.0/Bank.runtimeconfig.dev.json
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/bin/Debug/net5.0/Bank.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/bin/Debug/net5.0/ref/Bank.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/bin/Debug/net5.0/Bank.pdb
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.csprojAssemblyReference.cache
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.AssemblyInfoInputs.cache
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.AssemblyInfo.cs
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.csproj.CoreCompileInputs.cache
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/ref/Bank.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.pdb
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Bank/obj/Debug/net5.0/Bank.genruntimeconfig.cache
